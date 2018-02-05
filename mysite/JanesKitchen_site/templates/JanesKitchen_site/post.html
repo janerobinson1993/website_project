@@ -2,10 +2,23 @@
 
 {% block content %}
 
+<div class="row col-xs-12 col-md-8 col-xs-offset-3 col-md-offset-2" style="border-bottom: 1px rgba(0, 0, 0, 0.25) solid">
+
+    <div>
+        <img src="{{post.title_image.url}}" style="max-width:100%;">
+    </div>
+
+    <h1 class="text-center">{{ post.title_text}}</h1>
+    <p> {{ post.paragraph_one }}</p>
+    <p> {{ post.paragraph_two }}</p>
+    <p> {{ post.paragraph_three }}</p>
+
+</div>
+
 {% for row in rows %}
 <div class="row col-xs-12 col-md-8 col-xs-offset-3 col-md-offset-2">
     {% for post in row %}
-    <a href="posts/{{post.id}}">
+    <a href="../{{post.id}}">
         <div style="padding:16px;height:356px" class="col-md-4">
             <div class="front-page-cell" style="height:100%">
                 <div style="height:50%">

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>FROM JANE'S KITCHEN</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/JanesKitchen.css' %}">
+    </head>
+<body>
+<div class="container-fluid">
+    <div class="col-xs-6 col-sm-4 col-xs-offset-6 col-sm-offset-4" style="height:50px">
+    </div>
+</div>
+<div class="container-fluid">
+    <a href="/">
+        <div class="col-xs-6 col-sm-4 col-xs-offset-6 col-sm-offset-4" style="border:solid 6px">
+            <h1 class="text-center">From Jane's Kitchen</h1>
+        </div>
+    </a>
+
+</div>
+<div class="container-fluid">
+    <div class="col-xs-6 col-sm-4 col-xs-offset-6 col-sm-offset-4" style="height:50px">
+    </div>
+</div>
+{%block content%}
+{%endblock %}
+
+</body>
+</html>
